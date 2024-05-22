@@ -13,6 +13,12 @@ const swiper = new Swiper('.swiper-cero', {
         spaceBetween: 15
       },
 
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 15
+      },
+    
+
     // paginacion 
     pagination: {
       el: '.swiper-pagination',
