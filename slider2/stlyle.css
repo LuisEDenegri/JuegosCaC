@@ -227,3 +227,43 @@ hr{
     background-color: var(--color-letra);
     color: var(--bg-btn);
 }
+
+
+@media (min-width: 760px) {
+    div.swiper-slide {
+        height: 180px;
+    }
+    
+   
+    .container-img {
+        width: 100%;
+    }
+
+    .container-total {
+        gap: 16px;    
+    }
+
+    .particular img {
+        width: 35%;
+    }
+
+    .container-total {
+        grid-template-rows: 250px 250px;
+    }
+
+    .container-txt p {
+        font-size: 18px;
+    }
+
+    .container-txt h2 {
+        font-size: 20px;
+        margin: 5px 0 5px 5px;
+    }
+
+    .container-particular{
+        grid-template-rows: 60% 40%;
+    }
+
+  }
+
+
