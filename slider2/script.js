@@ -3,10 +3,15 @@ const swiper = new Swiper('.swiper-cero', {
     direction: 'horizontal',
     loop: true,
     effect: "slider",
-    
     spaceBetween: 5,
-    //autoplay: {delay:10000, pauseOnMouseEnter: true, disableOnInteraction: false,},
-    
+    autoplay: {delay:15000, pauseOnMouseEnter: true, disableOnInteraction: false,},
+
+    breakpoints: {
+      // when window width is >= 1200px
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 15
+      },
 
     // If we need pagination
     pagination: {
@@ -25,5 +30,6 @@ const swiper = new Swiper('.swiper-cero', {
     //scrollbar: {
     //  el: '.swiper-scrollbar',
     //},
+    }
   });
 
