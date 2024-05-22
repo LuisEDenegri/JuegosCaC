@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper-cero', {
-    // Optional parameters
+    // Parametros para el slider
     direction: 'horizontal',
     loop: true,
     effect: "slider",
@@ -7,29 +7,24 @@ const swiper = new Swiper('.swiper-cero', {
     autoplay: {delay:15000, pauseOnMouseEnter: true, disableOnInteraction: false,},
 
     breakpoints: {
-      // when window width is >= 1200px
+      // cuando el width >= 1200px
       1200: {
         slidesPerView: 3,
         spaceBetween: 15
       },
 
-    // If we need pagination
+    // paginacion 
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
       dynamicBullets: true,
     },
   
-    // Navigation arrows
+    // flechas del slider
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    //scrollbar: {
-    //  el: '.swiper-scrollbar',
-    //},
     }
   });
 
