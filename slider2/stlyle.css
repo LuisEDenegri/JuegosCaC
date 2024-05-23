@@ -269,6 +269,51 @@ hr{
     .container-particular{
         grid-template-rows: 60% 40%;
     }
+      .pie {
+    background-color: var(--bg-principal);
+    width: 90%;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: var(--color-letra);
+    grid-template-areas: "logo logo logo"
+                        "contacto seguinos servicios"
+                        "copy copy copy";
+}
+.logo {
+    height: 30%;
+    grid-area: logo; }
+.contacto { 
+    height: 60%;
+    grid-area: contacto; }
+.seguinos { 
+    height: 60%;
+    grid-area: seguinos }
+.servicios { 
+    height: 60%;
+    grid-area: servicios }
+.copy { 
+    height: 10%;
+    grid-area: copy }
+
+.pie > div,
+.pie .logo,
+.pie .seguinos,
+.pie .servicios,
+.pie .contacto,
+.pie .copy {
+    width: 100%;
+    background-color: var(--bg-principal);
+    color: var(--color-letra)
+}
+
+.pie a{
+    color: gold
+}
+
 
   }
 
