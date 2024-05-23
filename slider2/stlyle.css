@@ -11,6 +11,8 @@ body{
     --bg-btn:#007aff;
 }
 
+
+/*  STYLE DEL MAIN */
 .titulo{
     display: flex;
     align-items: center;
@@ -270,4 +272,5 @@ hr{
 
   }
 
+/*  FIN DEL STYLE DEL MAIN */
 
