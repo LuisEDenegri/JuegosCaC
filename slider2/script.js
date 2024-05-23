@@ -3,6 +3,7 @@ const swiper = new Swiper('.swiper-cero', {
     direction: 'horizontal',
     loop: true,
     effect: "slider",
+    slidesPerGroupAuto: true,
     spaceBetween: 5,
     autoplay: {delay:15000, pauseOnMouseEnter: true, disableOnInteraction: false,},
 
@@ -10,14 +11,16 @@ const swiper = new Swiper('.swiper-cero', {
       // cuando el width >= 1200px
       1200: {
         slidesPerView: 3,
-        spaceBetween: 15
+        spaceBetween: 15,
+        slidesPerGroupAuto: true,
       },
 
       700: {
         slidesPerView: 2,
-        spaceBetween: 15
+        spaceBetween: 15,
+        slidesPerGroupAuto: true,
       },
-    
+    },
 
     // paginacion 
     pagination: {
@@ -31,6 +34,6 @@ const swiper = new Swiper('.swiper-cero', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    }
+    
   });
 
