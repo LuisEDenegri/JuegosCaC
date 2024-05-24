@@ -269,35 +269,72 @@ hr{
     .container-particular{
         grid-template-rows: 60% 40%;
     }
-      .pie {
-    background-color: var(--bg-principal);
-    width: 90%;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    color: var(--color-letra);
-    grid-template-areas: "logo logo logo"
-                        "contacto seguinos servicios"
-                        "copy copy copy";
+footer{
+    height: 150px;;
 }
+
+.pie {
+    background-color: var(--bg-principal);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    color: var(--color-letra);
+    grid-template-areas: 
+    "logo1 logo1 logo1"
+    "contacto2 seguinos3 servicios4"
+    "copy5 copy5 copy5";
+    grid-template-rows: 30% 60% 10%;
+    gap: 20px;
+}
+
+.pie h3, a{
+    margin: 0;
+    text-decoration: none;
+}
+
+.pie a:hover{
+    color: var(--bg-btn);
+}
+
 .logo {
-    height: 30%;
-    grid-area: logo; }
-.contacto { 
-    height: 60%;
-    grid-area: contacto; }
+    height: 100%;
+    grid-area: logo1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    height: 100%;
+}
+.contactos { 
+    height: 100%;
+    width: 100%;
+    grid-area: contacto2; 
+    display: flex;
+    flex-direction: column
+}
 .seguinos { 
-    height: 60%;
-    grid-area: seguinos }
+    height: 90%;
+    width: 100%;
+    grid-area: seguinos3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .servicios { 
-    height: 60%;
-    grid-area: servicios }
+    height: 100%;
+    grid-area: servicios4;
+    display: flex;
+    flex-direction: column;
+}
 .copy { 
-    height: 10%;
-    grid-area: copy }
+    height: 100%;
+    grid-area: copy5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .pie > div,
 .pie .logo,
@@ -305,7 +342,6 @@ hr{
 .pie .servicios,
 .pie .contacto,
 .pie .copy {
-    width: 100%;
     background-color: var(--bg-principal);
     color: var(--color-letra)
 }
@@ -315,7 +351,6 @@ hr{
 }
 
 
-  }
 
 /*  FIN DEL STYLE DEL MAIN */
 
