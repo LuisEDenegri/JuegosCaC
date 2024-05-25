@@ -23,3 +23,8 @@ boton2Cerrar.addEventListener("click", function() {
 });
 
 
+fetch ("https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC")
+.then (response.json ())
+.then (data=>{
+  
+})
