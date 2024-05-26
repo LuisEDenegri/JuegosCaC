@@ -32,4 +32,13 @@ contenidoHeader.innerHTML =`
  `;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
 
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+.then(response => response.json())
+.then(data => {
+const contenidoHeader = document.querySelector('.swiper-img');
+contenidoHeader.innerHTML =`
+<img src="${data.imagen2}" alt="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
+
 
