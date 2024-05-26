@@ -23,7 +23,7 @@ boton2Cerrar.addEventListener("click", function() {
 });
 
 
-fetch ("https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC")
+fetch ("https://my-json-server.typicode.com/leandrofinten123/Proyecto1/imagenes")
 .then (response.json ())
 .then (data=>{const contenidoHeader = document.getElementById('titulo__1');
 contenidoHeader.innerHTML =`
