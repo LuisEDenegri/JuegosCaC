@@ -33,53 +33,77 @@ contenidoHeader.innerHTML =`
 .catch(error => console.error('Error al leer el archivo JSON:', error));
 
 
+
+
+//
+//
+//fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+//.then(response => response.json())
+//.then(data => {
+//const contenidoMain = document.querySelector('.swiper-img2');
+//contenidoMain.innerHTML =`
+//<img src="${data.imagen2}" alt="">
+// `;})
+//.catch(error => console.error('Error al leer el archivo JSON:', error));
+//
+//
+//fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+//.then(response => response.json())
+//.then(data => {
+//const contenidoMain = document.querySelector('.swiper-img3');
+//contenidoMain.innerHTML =`
+//<img src="${data.imagen3}" alt="">
+// `;})
+//.catch(error => console.error('Error al leer el archivo JSON:', error));
+//
+//
+//
+//fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+//.then(response => response.json())
+//.then(data => {
+//const contenidoMain = document.querySelector('.swiper-img4');
+//contenidoMain.innerHTML =`
+//<img src="${data.imagen4}" alt="">
+// `;})
+//.catch(error => console.error('Error al leer el archivo JSON:', error));
+//
+//
+//
+//fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+//.then(response => response.json())
+//.then(data => {
+//const contenidoMain = document.querySelector('.swiper-img5');
+//contenidoMain.innerHTML =`
+//<img src="${data.imagen5}" alt="">
+// `;})
+//.catch(error => console.error('Error al leer el archivo JSON:', error));
+//
+//
+//fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+//.then(response => response.json())
+//.then(data => {
+//const contenidoMain = document.querySelector('.swiper-img6');
+//contenidoMain.innerHTML =`
+//<img src="${data.imagen6}" alt="">
+// `;})
+//.catch(error => console.error('Error al leer el archivo JSON:', error));
+//
+//
+//
+
 fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidoMain = document.querySelector('.swiper-img2');
-contenidoMain.innerHTML =`
-<img src="${data.imagen2}" alt="">
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
-
-
-fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidoMain = document.querySelector('.swiper-img3');
-contenidoMain.innerHTML =`
-<img src="${data.imagen3}" alt="">
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
-
-
-
-fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidoMain = document.querySelector('.swiper-img4');
-contenidoMain.innerHTML =`
-<img src="${data.imagen4}" alt="">
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
-
-
-
-fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidoMain = document.querySelector('.swiper-img5');
-contenidoMain.innerHTML =`
-<img src="${data.imagen5}" alt="">
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
-
-
-fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
-.then(response => response.json())
-.then(data => {
-const contenidoMain = document.querySelector('.swiper-img6');
-contenidoMain.innerHTML =`
-<img src="${data.imagen6}" alt="">
- `;})
-.catch(error => console.error('Error al leer el archivo JSON:', error));
+  .then(response => response.json())
+  .then(data => {
+    const selectors = ['.swiper-img2', '.swiper-img3', '.swiper-img4', '.swiper-img5', '.swiper-img6','.swiper-img'];
+    const images = [data.imagen2, data.imagen3, data.imagen4, data.imagen5, data.imagen6,data.image15];
+    
+    selectors.forEach((selector, index) => {
+      const contenidoMain = document.querySelector(selector);
+      if (contenidoMain && images[index]) {
+        contenidoMain.innerHTML = `<img src="${images[index]}" alt="">`;
+      } else {
+        console.error(`No se encontró el contenedor para el selector ${selector} o la imagen no está disponible`);
+      }
+    });
+  })
+  .catch(error => console.error('Error al leer el archivo JSON:', error));
