@@ -1,0 +1,22 @@
+* {
+    background-color: rgb(38, 38, 245);
+    color: aliceblue;}
+
+h1 {
+    color: gold;
+    text-align: center;
+    text-decoration: underline;
+}
+#detalleReclamo {
+    min-width: 300px;
+    min-height: 200px;
+}
+.selector {
+    color: black;
+    width: fit-content;
+    display: flex;
+    border-radius: 4px;
+    border-color: gold;
+    background-color: rgb(8, 133, 39);
+    
+}
