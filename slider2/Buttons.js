@@ -95,7 +95,7 @@ fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
   .then(response => response.json())
   .then(data => {
     const selectors = ['.swiper-img2', '.swiper-img3', '.swiper-img4', '.swiper-img5', '.swiper-img6','.swiper-img'];
-    const images = [data.imagen2, data.imagen3, data.imagen4, data.imagen5, data.imagen6,data.image15];
+    const images = [data.imagen2, data.imagen3, data.imagen4, data.imagen5, data.imagen6,data.imagen15];
     
     selectors.forEach((selector, index) => {
       const contenidoMain = document.querySelector(selector);
