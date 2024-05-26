@@ -219,7 +219,7 @@ div.swiper-slide{
     border-radius: 5px;
 }
 
-.swiper-img{
+.swiper-img, .swiper-img1, .swiper-img2, .swiper-img3,.swiper-img4,.swiper-img5,.swiper-img6{
     width: 40%;
     height: 90%;
     display: flex;

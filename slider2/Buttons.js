@@ -32,13 +32,54 @@ contenidoHeader.innerHTML =`
  `;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
 
+
 fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
 .then(response => response.json())
 .then(data => {
-const contenidoHeader = document.querySelector('.swiper-img');
-contenidoHeader.innerHTML =`
+const contenidoMain = document.querySelector('.swiper-img2');
+contenidoMain.innerHTML =`
 <img src="${data.imagen2}" alt="">
  `;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
 
 
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+.then(response => response.json())
+.then(data => {
+const contenidoMain = document.querySelector('.swiper-img3');
+contenidoMain.innerHTML =`
+<img src="${data.imagen3}" alt="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
+
+
+
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+.then(response => response.json())
+.then(data => {
+const contenidoMain = document.querySelector('.swiper-img4');
+contenidoMain.innerHTML =`
+<img src="${data.imagen4}" alt="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
+
+
+
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+.then(response => response.json())
+.then(data => {
+const contenidoMain = document.querySelector('.swiper-img5');
+contenidoMain.innerHTML =`
+<img src="${data.imagen5}" alt="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
+
+
+fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
+.then(response => response.json())
+.then(data => {
+const contenidoMain = document.querySelector('.swiper-img6');
+contenidoMain.innerHTML =`
+<img src="${data.imagen6}" alt="">
+ `;})
+.catch(error => console.error('Error al leer el archivo JSON:', error));
