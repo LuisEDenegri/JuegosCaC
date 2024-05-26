@@ -51,15 +51,19 @@ div>input{
     background-color: var(--bg-inputs);
 }
 
-button{
+a.ingreso{
+    display: flex;
     flex:1 0 60px;
     border-radius: 5px;
     color:var(--bg-letras);
     background-color: var(--bg-boton);
     font-size: 15px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover{
+.ingreso:hover{
     background-color: rgb(190, 2, 2);
     color: black;
 }

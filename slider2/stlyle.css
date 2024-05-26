@@ -9,14 +9,16 @@ body{
     --bg-secundario: rgb(13 16 39);
     --bg-principal:#100b31;
     --bg-btn:#007aff;
+    --bg-menu: rgb(0, 191, 255);
 }
 
 /*  HEADER */
 .desktop{
     display: flex;
-    justify-content: end;
+    justify-content: center;
     gap: 15px;
     color: white; 
+    background-color: var(--bg-menu);
 }
 .menudesplegable{
     display: none;
@@ -39,8 +41,7 @@ body{
 }
 .header__1{
     display: flex;
-    border: 1px solid black;
-    background-color: rgb(0, 191, 255);
+    background-color: var(--bg-menu);
     gap: 60px;
 }
 .button__1{
@@ -64,6 +65,8 @@ body{
 .buscador__2{
     width: 10%;
     height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .sonic{
     display: flex;
@@ -109,12 +112,14 @@ body{
 .header__4{
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-color: var(--bg-principal);
 }
 
 .button__2{
     display: flex;
     font-size: 33px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .menudesplegable2{
     display: flex;
@@ -134,11 +139,17 @@ body{
 }
 .menuprincipal{
     display: flex;
+    height: 50px;
     justify-content: center;
+    align-items: center;
     border-bottom: 2px solid black;
-    padding-top: 50px;
-    background-color: cadetblue;
+    background-color: gray;
 }
+
+h2.menuprincipal {
+    margin: 0;
+}
+
 .botoncerrar2{
     display: flex;
     justify-content: center;
@@ -153,6 +164,19 @@ body{
     gap: 40px;
     font-size: 20px;
 }
+
+a.itemMenu{
+ color: var(--color-letra2);
+}
+
+a.itemMenu:hover{
+    color: var(--bg-btn);
+}
+
+button.botoncerrar2:hover {
+    color: red;
+}
+
 
 /*  FIN DEL HEADER */
 
@@ -482,6 +506,14 @@ footer{
         width: 50%;
         height: 100%;
     }
+    .pie a {
+        font-size: 10px;
+    }
+    p.item{
+        font-size: 11px;
+        margin: 0;
+    }
+
 }
 
 
@@ -521,7 +553,12 @@ footer{
     .container-particular{
         grid-template-rows: 60% 40%;
     }
+
     /* STYLE DEL MAIN*/
+
+    .pie a {
+        font-size: 15px;
+    }
 }
 
 @media (min-width:1500px){
@@ -533,7 +570,7 @@ footer{
         height: 100%;
     }
     .container-total {
-        grid-template-rows: 300px 300px;
+        grid-template-rows: 350px 350px;
     }
     /* STYLE DEL MAIN*/
 }
@@ -542,12 +579,14 @@ footer{
 
 
 @media (max-width:1000px){
-    
+    .container-total {
+        grid-template-rows: 350px 350px;
+    }
     .logo__1{
             width: 90%;
     }
     .header__1{
-        background-color: black;
+        background-color: var(--bg-menu);
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -593,7 +632,7 @@ footer{
     .header__4{
         display: flex;
         justify-content: center;
-        background-color: grey;
+        background-color: var(--bg-principal);
         height: 100%;
     }
     .button__2{
@@ -602,11 +641,11 @@ footer{
         justify-content: center;
         height: 30px;
         font-size: 18px;
-        background-color: red;
+        background-color: white;
     }
     
     .desktop{
-        background-color: gray;
+        background-color: var(--bg-menu);
         display: flex;
         justify-content: center;
         gap: 15px;
@@ -672,7 +711,7 @@ footer{
         justify-content: center;
         border-bottom: 2px solid black;
         padding-top: 50px;
-        background-color: cadetblue;
+        background-color: gray;
     }
     .botoncerrar2{
         display: flex;

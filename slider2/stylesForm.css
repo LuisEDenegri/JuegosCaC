@@ -7,7 +7,7 @@ h1 {text-align: center;
     text-decoration: underline;}
 
 .datosPersonales{
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-flow: column;
     row-gap: 2px;
@@ -38,4 +38,11 @@ h1 {text-align: center;
     background-color: black;
     color: white;
     border: 1px solid gold;
+}
+
+@media(max-width:790px){
+    .datosPersonales{
+        width: 100%;
+       
+    }
 }
