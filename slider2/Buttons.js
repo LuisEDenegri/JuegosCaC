@@ -23,9 +23,9 @@ boton2Cerrar.addEventListener("click", function() {
 });
 
 
-fetch ("https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC")
+fetch ("https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes")
 .then (response.json ())
-.then (data=>{const contenidoHeader = document.getElementById('titulo__1');
+.then (data=>{const contenidoHeader = document.querySelector('.titulo__1');
 contenidoHeader.innerHTML =`
-<img src="${data.imagen1}" alt ="">`;})
+<img class="logo__1" src="${data.imagen1}" alt ="">`;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
