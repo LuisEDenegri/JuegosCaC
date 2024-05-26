@@ -1,0 +1,20 @@
+
+* {background-color: rgb(35, 35, 222);
+color: aqua;}
+h1 {text-align: center;
+    color: gold;
+    font-weight: bold;
+    text-decoration: underline;}
+
+.datosPersonales{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    row-gap: 2px;
+    column-gap: 4px;
+}
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
