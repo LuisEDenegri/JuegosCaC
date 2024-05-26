@@ -27,7 +27,7 @@ fetch('https://my-json-server.typicode.com/LuisEDenegri/JuegosCaC/imagenes')
 .then(response => response.json())
 .then(data => {
 const contenidoHeader = document.querySelector('.titulo__1');
-contenidoHeader.innerHTML = `
-<img class="logo1" src="${data.imagen1}" alt ="">
+contenidoHeader.innerHTML =`
+<img class="logo__1" src="img/LOGOheader.jpg" alt="">
  `;})
 .catch(error => console.error('Error al leer el archivo JSON:', error));
